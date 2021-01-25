@@ -5,8 +5,9 @@ namespace TestNinja.Fundamentals
     public class Math
     {
         public int Add(int a, int b)
-        { 
-            return a + b;
+        {
+            var result = a + b;
+            return result;
         }
         
         public int Max(int a, int b)
