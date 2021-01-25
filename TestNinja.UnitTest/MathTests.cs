@@ -24,6 +24,8 @@ namespace TestNinja.UnitTest
             //ASSIGN
             int numA = 5;
             int numB = 7;
+            Math myMathClass = new Math();
+
             //ACT / When
             int result = _math.Add(numA,numB);
 
@@ -45,7 +47,6 @@ namespace TestNinja.UnitTest
             Assert.AreEqual(expectedResult, result);
 
         }
-        
         /*[Test]
         *public void Max_SecondArgumentIsGreater_SecondArgumentIsReturned()
         *{
@@ -80,7 +81,7 @@ namespace TestNinja.UnitTest
         {
             int[] expectedResult = { 1, 3, 5 };
             IEnumerable<int> result = _math.GetOddNumbers(5);
-            
+
             //Assert.NotNull(result);
             //Assert.AreEqual(3, result.Count());
             Assert.AreEqual(expectedResult, result);
